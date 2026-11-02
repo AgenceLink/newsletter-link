@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "/articles/:slug*", "destination": "/", "permanent": false },
+    { "source": "/portrait.html", "destination": "/", "permanent": false },
+    { "source": "/sources.html", "destination": "/", "permanent": false }
+  ]
+}

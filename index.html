@@ -4,152 +4,172 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Les News | keep the link</title>
-  <meta name="description" content="Veille webmarketing Link, édition septembre 2026 : économie française, régies, production vidéo.">
+  <meta name="description" content="Veille webmarketing Link, édition #9 novembre 2026 : conjoncture, chiffres du marché publicitaire, webinaire CCI du Tarn, film automobile, portrait du mois.">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="css/styles.css">
+<style>
+:root{--o:#E94C16;--g:#565655;--bg:#f6f5f3;--card:#fff;--ink:#1d1d1b;--mute:#6b6b69;--line:#e6e4e0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121211;--card:#1d1c1b;--ink:#f2f1ee;--mute:#a7a6a2;--line:#2e2d2b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121211;--card:#1d1c1b;--ink:#f2f1ee;--mute:#a7a6a2;--line:#2e2d2b;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Avenir Next",Avenir,"Segoe UI",Helvetica,Arial,sans-serif;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.hero{background:#111;color:#fff;position:relative;overflow:hidden}
+header.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 46px,rgba(233,76,22,.22) 46px 58px,transparent 58px 110px)}
+.hero .wrap{position:relative;padding-block:28px 48px}
+.logo{font-weight:600;letter-spacing:.02em}.logo b{color:var(--o)}
+.ed{display:inline-block;margin-top:28px;font-size:13px;color:#ddd;border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:3px 12px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.1;margin:14px 0 12px;font-weight:600}
+.chapo{max-width:620px;color:#e6e6e6;font-size:17px}
+.btn{display:inline-block;background:var(--o);color:#fff;text-decoration:none;font-weight:600;padding:11px 20px;border-radius:8px;margin:8px 8px 0 0}
+.btn.ghost{background:transparent;border:1px solid currentColor;color:inherit}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:-28px 0 28px;position:relative}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi strong{display:block;font-size:24px;color:var(--o);line-height:1.2}
+.kpi span{font-size:14px;color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:20px}
+.tag{font-size:12px;letter-spacing:.08em;color:var(--o);font-weight:600}
+h2{font-size:24px;line-height:1.25;margin:6px 0 12px;font-weight:600}
+.clair{border-left:3px solid var(--o);padding:6px 0 6px 14px;margin:16px 0;color:var(--ink)}
+.clair b{color:var(--o)}
+ul{padding-left:20px}li{margin:4px 0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.meta span{background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:3px 12px;font-size:14px}
+video{width:100%;border-radius:10px;display:block;background:#000;margin:14px 0}
+.dark{background:#111;color:#fff;border:none}.dark .clair{color:#fff}
+.portrait{display:grid;grid-template-columns:160px 1fr;gap:22px;align-items:start}
+.photo{aspect-ratio:1;border-radius:12px;background:var(--bg);border:2px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;color:var(--mute);padding:10px}
+.photo-img{width:100%;max-width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block}
+.fiche dt{font-size:12px;letter-spacing:.06em;color:var(--o);font-weight:600;margin-top:10px}
+.fiche dd{margin:0}
+.todo{background:rgba(233,76,22,.15);color:inherit;border-radius:4px;padding:0 4px}
+.src{font-size:13px;color:var(--mute)}
+footer{padding-block:30px 50px;text-align:center;font-size:14px;color:var(--mute)}
+footer .sig{font-size:22px;color:var(--o);font-weight:600;margin-bottom:8px}
+@media (max-width:640px){.kpis{grid-template-columns:1fr}.portrait{grid-template-columns:1fr}.photo{max-width:180px}.photo-img{max-width:220px}.card{padding:20px}}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-name">keep the link</span>
-        <span class="brand-tag">Les News</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"><span></span></button>
-      <nav class="site-nav" aria-label="Navigation principale">
-        <a href="index.html" class="is-active">Accueil</a>
-        <a href="articles/marche-pub.html">Marché</a>
-        <a href="articles/achat-media.html">Régies</a>
-        <a href="articles/video-ia.html">Vidéo</a>
-        <a href="portrait.html">Portrait</a>
-        <a href="sources.html">Sources</a>
-        <a class="btn" href="https://link.fr/contact-agence-link/">Prendre RDV</a>
-      </nav>
-    </div>
-  </header>
-  <section class="hero">
-    <div class="waves" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <div>
-        <div class="eyebrow">Édition #8 · Septembre 2026</div>
-        <h1>Budgets serrés, <span>vidéo qui cartonne.</span></h1>
-        <p class="hero-lead">L'économie française tourne au ralenti, mais la vidéo courte n'a jamais autant rapporté. Ce mois-ci : ce que la conjoncture change pour vos budgets, les évolutions régies à connaître, et pourquoi le bon format vidéo fait la différence.</p>
-        <div class="hero-actions">
-          <a class="btn" href="articles/marche-pub.html">Lire l'édition</a>
-          <a class="btn btn-ghost" href="portrait.html">Le portrait du mois</a>
-        </div>
-      </div>
-      <dl class="hero-meta">
-        <dt>Croissance PIB France 2026</dt>
-        <dd>+0,4 %</dd>
-        <dt>Pouvoir d'achat des ménages</dt>
-        <dd>&minus;0,3 %</dd>
-        <dt>Vidéo courte</dt>
-        <dd>n°1 au ROI</dd>
+<header class="hero"><div class="wrap">
+  <div class="logo">keep the <b>link</b> · Les News</div>
+  <div class="ed">Édition #9 · Novembre 2026</div>
+  <h1>Fin d'année : chaque euro doit travailler.</h1>
+  <p class="chapo">Un automne difficile pour le commerce et un moral des ménages au plus bas, à l'approche des fêtes. Ce mois-ci : le point sur la conjoncture, les chiffres du marché publicitaire, un webinaire gratuit pour faire le point, et un film automobile déjà écrit, prêt à tourner.</p>
+  <a class="btn" href="#marche">Lire l'édition</a><a class="btn ghost" href="#portrait">Le portrait du mois</a>
+</div></header>
+
+<main class="wrap">
+  <div class="kpis">
+    <div class="kpi"><strong>80 pts</strong><span>Moral des ménages en octobre, au plus bas depuis 2013 (Insee, 27/10)</span></div>
+    <div class="kpi"><strong>775 M€</strong><span>Retail media au 1er semestre, +18 % : la pub sur les sites marchands</span></div>
+    <div class="kpi"><strong>+24 %</strong><span>Publicité sur les moteurs de recherche des sites marchands (S1 2026)</span></div>
+  </div>
+
+  <section class="card" id="marche">
+    <div class="tag">L'ACTU FLASH · ÉCONOMIE &amp; MARCHÉ</div>
+    <h2>Un automne sous tension pour le commerce.</h2>
+    <p>Depuis le 17 octobre, le retour des gilets jaunes rythme les week-ends. Le premier samedi, environ 3 000 commerces ont été dégradés ou pillés. Le 24 octobre, 70 000 policiers et gendarmes étaient mobilisés, et de nombreux commerçants ont baissé le rideau par précaution. À Clermont-Ferrand, certains parlent de « deux samedis à zéro de chiffre d'affaires ». Un troisième acte est annoncé pour le 31 octobre.</p>
+    <p>Dans le même temps, l'Insee publie ce 27 octobre un moral des ménages à 80 points, son plus bas niveau depuis juin 2013. Les Français jugent moins que jamais le moment opportun pour un achat important, et l'inflation qu'ils ressentent repart à la hausse.</p>
+    <p>Nos pensées vont d'abord aux commerçants touchés, et à leurs équipes.</p>
+    <div class="clair"><b>En clair :</b> à l'approche des fêtes, l'enjeu pour chacun est d'abord de pouvoir informer simplement ses clients : horaires, ouverture, modalités de retrait. Si vous avez besoin d'un coup de main pour mettre à jour ces informations en ligne, nos équipes restent disponibles.</div>
+    <p class="src">Sources : Insee via AFP (27/10/2026), actu.fr, France 3, Le JDD, CCI France.</p>
+  </section>
+
+  <section class="card" id="chiffres">
+    <div class="tag">LES INFOS DE MARCHÉ · LES CHIFFRES DU SEMESTRE</div>
+    <h2>Le marché grandit. Mais pas partout.</h2>
+    <p>Au premier semestre 2026, les médias français ont encaissé 9,75 milliards d'euros de recettes publicitaires, en hausse de 5,6 %. Derrière ce chiffre, deux mouvements opposés.</p>
+    <ul>
+      <li><b>Le digital accélère :</b> 6,7 Md€, soit +12 %. Il pèse désormais plus des deux tiers du marché.</li>
+      <li><b>Les réseaux sociaux mènent la course :</b> 2,2 Md€, +16 %. La vidéo y représente 64 % des dépenses, en hausse de 31 %, quand les formats sociaux classiques (image, carrousel) reculent de 4 %.</li>
+      <li><b>Le search reste le premier poste :</b> 2,7 Md€, +12 %. C'est la publicité qui apparaît quand on cherche un produit sur Google ou sur un site marchand.</li>
+      <li><b>Le retail media décolle :</b> 775 M€, +18 %. En clair, la pub diffusée sur les sites des enseignes (Amazon, Carrefour, Cdiscount…), au plus près de l'acte d'achat.</li>
+      <li><b>Les médias historiques reculent :</b> télévision -6,2 %, presse -6 %, radio -3,5 %. Seul l'affichage digital progresse (+4 %).</li>
+    </ul>
+    <div class="clair"><b>En clair :</b> les budgets ne disparaissent pas, ils se déplacent vers ce qui se mesure. Et la vidéo courte est devenue le format qui attire le plus d'investissements.</div>
+    <p>Pour l'année, Oliver Wyman anticipe un marché digital de 13,9 Md€ (+11 %), et France Pub une croissance des investissements digitaux de +8,6 %.</p>
+    <p class="src">Sources : BUMP S1 2026 (Kantar Media, France Pub, IREP), Observatoire de l'e-pub SRI / UDECAM / Oliver Wyman, via The Media Leader.</p>
+  </section>
+
+  <section class="card" id="regies">
+    <div class="tag">RÉGIES &amp; PLATEFORMES · L'ÉVÉNEMENT DU MOIS</div>
+    <h2>Webinaire : réussir vos campagnes publicitaires sur internet.</h2>
+    <p>Meta, Google, TikTok, LinkedIn : chaque plateforme a ses règles, et ses pièges. Avec la CCI du Tarn, deux experts Link vous livrent en 1 h 30 ce qui fait vraiment la différence entre une campagne qui coûte et une campagne qui rapporte.</p>
+    <div class="meta"><span>Jeudi 19 novembre 2026</span><span>10 h 00 à 11 h 30</span><span>En ligne</span><span>Gratuit</span></div>
+    <ul>
+      <li>Community manager ou trafic manager : qui fait quoi, et pourquoi c'est différent</li>
+      <li>Choisir ses plateformes selon sa cible et son objectif</li>
+      <li>Le score qualité : la note que Google donne à vos annonces, et qui fait baisser (ou grimper) votre coût par clic</li>
+      <li>Le tunnel de conversion : guider un inconnu jusqu'à l'achat, étape par étape</li>
+      <li>Mesurer, puis optimiser : les bons indicateurs à suivre</li>
+    </ul>
+    <p>Animé par Julien Cassagne, directeur des opérations, et Martin Praquin, directeur conseil Occitanie. Ouvert à toutes les entreprises, du débutant au confirmé.</p>
+    <div class="clair"><b>En clair :</b> 90 minutes, sans jargon, pour repartir avec une méthode applicable dès le lendemain.</div>
+    <a class="btn" href="https://www.tarn.cci.fr/evenement/webinaire-reussir-vos-campagnes-publicitaires-sur-internet">Je m'inscris gratuitement →</a>
+  </section>
+
+  <section class="card" id="video">
+    <div class="tag">LE TIP EXPERT · PRODUCTION VIDÉO</div>
+    <h2>Distributeurs automobiles : votre film est déjà écrit.</h2>
+    <p>Notre studio a développé un film pensé pour les distributeurs automobiles multimarques. Son point de départ : ce qui fait vraiment la différence en concession, ce ne sont pas les voitures, ce sont les femmes et les hommes qui les vendent, les livrent et les entretiennent.</p>
+    <p>Un constat chiffré : dans l'automobile, 81 % des budgets vidéo partent encore en télévision linéaire, contre 25 % sur les réseaux sociaux tous secteurs confondus (Kantar Media, T1 2026). Pour un distributeur, la vidéo sociale reste un terrain largement libre, et bien plus accessible.</p>
+    <p>Le scénario est écrit, la mise en scène est pensée. Il ne reste qu'à l'adapter à vos équipes, à vos sites et à vos marques.</p>
+    <ul>
+      <li>Délai de production raccourci : la phase d'écriture est déjà faite</li>
+      <li>Un film qui met en avant vos collaborateurs, votre premier argument face à la concurrence</li>
+      <li>Des déclinaisons pensées pour les réseaux sociaux : formats courts et verticaux, ceux que l'on regarde sur son téléphone</li>
+    </ul>
+    <div class="clair"><b>En clair :</b> la qualité d'un film sur mesure, avec la rapidité d'une solution prête à l'emploi.</div>
+    <a class="btn" href="mailto:gary.c@link.fr?subject=Film%20automobile%20%3A%20je%20souhaite%20d%C3%A9couvrir%20le%20sc%C3%A9nario">Découvrir le scénario →</a>
+  </section>
+
+  <section class="card dark" id="visio">
+    <div class="tag">VOTRE RENDEZ-VOUS</div>
+    <h2>Comment faire tenir 15 minutes en 45 secondes ?</h2>
+    <p>15 minutes de visio avec un expert Link pour faire le point sur vos campagnes et vos priorités de fin d'année.</p>
+    <video id="vid" controls muted loop playsinline preload="metadata" poster="images/visio-poster.jpg">
+      <source src="video/link-prospection-15min-45s.mp4" type="video/mp4">
+    </video>
+    <a class="btn" href="mailto:gary.c@link.fr?subject=OK%20pour%20une%20visio%20de%2015%20min">OK pour une visio de 15 min →</a>
+  </section>
+
+  <section class="card" id="portrait">
+    <div class="tag">QUI SONT-ILS ? · LE PORTRAIT DU MOIS</div>
+    <h2>Sabine Braud Pailler</h2>
+    <div class="portrait">
+      <img class="photo-img" src="images/sabine-braud-pailler.jpg" alt="Sabine Braud Pailler">
+      <dl class="fiche">
+        <dt>SON POSTE</dt><dd>Directrice de clientèle Limousin</dd>
+        <dt>SON SURNOM</dt><dd>La Saboche</dd>
+        <dt>SON MANTRA</dt><dd>« Prendre soin des gens, c'est déjà les aimer. »</dd>
+        <dt>SON PLAISIR COUPABLE</dt><dd>Un carré de chocolat avec chaque café, et souvent un deuxième.</dd>
+        <dt>SON PETIT TRUC EN PLUS</dt><dd>La reine de l'art de la table à la française.</dd>
       </dl>
     </div>
   </section>
-  <div class="topics">
-    <div class="container">
-      <ul class="topics-list">
-        <li><a href="articles/marche-pub.html">Économie &amp; marché</a></li>
-        <li><a href="articles/achat-media.html">Régies &amp; plateformes</a></li>
-        <li><a href="articles/video-ia.html">Production vidéo</a></li>
-        <li><a href="portrait.html">Portrait du mois</a></li>
-      </ul>
-    </div>
-  </div>
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <div class="section-kicker">Au sommaire</div>
-          <h2>Trois sujets à retenir</h2>
-        </div>
-      </div>
-      <p class="intro-text">Septembre 2026 se résume simplement : l'économie française ralentit (<strong>PIB attendu à +0,4 %, pouvoir d'achat en recul</strong>), ce qui remet la preuve du ROI au centre de chaque euro investi. Côté régies, l'automatisation avance et Meta rebat ses placements. Et la vidéo courte s'impose comme le format n°1 au rendement, un terrain où notre studio interne fait la différence.</p>
-      <div class="kpi-row">
-        <div class="kpi-card"><div class="kpi-value">+0,4 %</div><div class="kpi-label">Croissance PIB France 2026 (Insee)</div></div>
-        <div class="kpi-card"><div class="kpi-value">&minus;0,3 %</div><div class="kpi-label">Pouvoir d'achat des ménages 2026</div></div>
-        <div class="kpi-card"><div class="kpi-value">49 %</div><div class="kpi-label">des marketeurs classent la vidéo courte n°1 au ROI</div></div>
-      </div>
-      <div class="card-grid four" style="margin-top:40px">
-        <a class="card featured" href="articles/marche-pub.html">
-          <div class="card-label">L'actu flash</div>
-          <h3>L'économie française au ralenti : le ROI n'est plus négociable</h3>
-          <p>Croissance en berne, ménages qui serrent les dépenses. Dans ce contexte, chaque euro de publicité doit prouver son rendement. C'est précisément la promesse Link : des campagnes pilotées au résultat.</p>
-          <span class="card-more">Lire l'article &rarr;</span>
-        </a>
-        <a class="card" href="articles/achat-media.html">
-          <div class="card-label">Régies &amp; plateformes</div>
-          <h3>Ce qui change côté régies cette rentrée</h3>
-          <p>Meta supprime l'exclusion de placements et récompense la diversité créative. Google poursuit l'automatisation et le clic y coûte désormais deux fois plus cher que sur Meta. Notre rôle : garder la main sur vos résultats.</p>
-          <span class="card-more">Lire l'article &rarr;</span>
-        </a>
-        <a class="card" href="articles/video-ia.html">
-          <div class="card-label">Production vidéo</div>
-          <h3>La vidéo verticale n'est plus une option</h3>
-          <p>95 % des Français regardent de la vidéo courte chaque semaine, et une verticale de moins d'une minute génère près de 2,7&times; plus d'engagement qu'une image fixe. Produire vite, bien et au bon format : tout l'intérêt d'un studio internalisé.</p>
-          <span class="card-more">Lire l'article &rarr;</span>
-        </a>
-      </div>
-    </div>
+
+  <section class="card" style="text-align:center">
+    <div class="tag">PROCHAIN RENDEZ-VOUS</div>
+    <h2>Décembre 2026</h2>
+    <a class="btn" href="mailto:gary.c@link.fr?subject=Prendre%20RDV%20avec%20un%20expert%20Link">Prendre RDV avec un expert →</a>
   </section>
-  <section class="portrait-band">
-    <div class="waves"></div>
-    <div class="container portrait-inner">
-      <img class="avatar" src="images/pauline-bonon.jpg" alt="Pauline Bonon">
-      <div>
-        <div class="portrait-role">Qui sont-ils ?</div>
-        <h2>Pauline Bonon</h2>
-        <p>Cheffe de projet, surnom PauB. « Un brief clair, c'est déjà la moitié du travail. »</p>
-      </div>
-      <a class="btn" href="portrait.html">Voir le portrait &rarr;</a>
-    </div>
-  </section>
-  <section class="cta-band">
-    <div class="container cta-inner">
-      <div>
-        <div class="cta-kicker">Prochain rendez-vous</div>
-        <strong>Octobre 2026</strong>
-      </div>
-      <a class="btn" href="https://link.fr/contact-agence-link/">Prendre RDV avec un expert &rarr;</a>
-    </div>
-  </section>
-  <footer class="site-footer">
-    <div class="waves"></div>
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">Welcome <span>again.</span></div>
-          <p>Agence Link · 127 rue Turenne, 33000 Bordeaux<br>www.link.fr</p>
-        </div>
-        <div>
-          <h3>Le site</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="articles/marche-pub.html">Marché</a></li>
-            <li><a href="articles/achat-media.html">Régies</a></li>
-            <li><a href="articles/video-ia.html">Vidéo</a></li>
-            <li><a href="portrait.html">Portrait</a></li>
-            <li><a href="sources.html">Sources</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Contact</h3>
-          <ul>
-            <li><a href="https://link.fr/contact-agence-link/">link.fr</a></li>
-            <li>Édition #8 · Septembre 2026</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>keep the link · Les News</span>
-        <span>Tous droits réservés</span>
-      </div>
-    </div>
-  </footer>
-  <script src="js/site.js"></script>
+</main>
+
+<footer class="wrap">
+  <div class="sig">Welcome again.</div>
+  Agence Link · 127 rue Turenne, 33000 Bordeaux · <a href="https://www.link.fr" style="color:inherit">www.link.fr</a><br>
+  Édition #9 · Novembre 2026 · keep the link · Les News, tous droits réservés
+</footer>
+<script>
+(function(){
+  var v=document.getElementById('vid');if(!v)return;
+  v.muted=true;
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){e.forEach(function(x){
+      if(x.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){});}else{v.pause();}
+    });},{threshold:0.5}).observe(v);
+  }
+})();
+</script>
 </body>
 </html>

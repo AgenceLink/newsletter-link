@@ -1,15 +1,16 @@
 # Les News , keep the link
 
-Site de la newsletter **keep the link**, édition #8 (septembre 2026).
+Site de la newsletter **keep the link**, édition #9 (novembre 2026) : https://newsletter.link.fr
 
-## Pages
+Site statique d'une seule page, publié automatiquement par Vercel à chaque push sur `main`.
 
-- `index.html` , accueil
-- `articles/marche-pub.html` , économie française et ROI
-- `articles/achat-media.html` , régies et plateformes
-- `articles/video-ia.html` , vidéo verticale
-- `portrait.html` , Pauline Bonon
-- `sources.html` , sources citées
+## Fichiers
+
+- `index.html` , la page complète (styles et script inclus)
+- `images/visio-poster.jpg` , image d'aperçu de la vidéo « Comment faire tenir 15 minutes en 45 secondes ? »
+- `images/sabine-braud-pailler.jpg` , photo du portrait du mois
+- `video/link-prospection-15min-45s.mp4` , vidéo de la section « Votre rendez-vous »
+- `vercel.json` , redirections des anciennes pages (édition #8) vers l'accueil
 
 ## Lancer en local
 
